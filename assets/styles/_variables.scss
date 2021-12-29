@@ -1,0 +1,30 @@
+/* COLORS */
+$primaryColor: rgb(190,17,31);
+$primaryColorHover: rgb(215,65,80);
+$primaryColorBG: rgb(55,25,25);
+$secondaryColor: rgb(255,241,97);
+$lightGrey: rgb(124,124,124);
+$veryLightGrey: rgb(180,180,180);
+$ultraLightGrey: rgb(240,240,240);
+$heavyGrey: rgb(26,26,26);
+$grey: rgb(47,47,47);
+$opacity7: rgba(0,0,0,0.7);
+$opacity5: rgba(0,0,0,0.5);
+/* creperie-saveursgourmandes.com *
+
+/* FONTS */
+@mixin primaryFont {font-family: "Lato";}
+@mixin primaryFontItalic {font-family: "Lato-italic";}
+@mixin primaryFontLight {font-family: "Lato-light";}
+@mixin primaryFontLightItalic {font-family: "Lato-light-italic";}
+@mixin primaryFontBold {font-family: "Lato-bold";}
+@mixin primaryFontBoldItalic {font-family: "Lato-bold-italic";}
+
+/* PICTURES */
+
+/* HELP */
+$extraLargeWidth: 1200px;
+$largeWidth: 992px;
+$mediumWidth: 768px;
+$smallWidth: 576px;
+$minWithScreen: 300px;

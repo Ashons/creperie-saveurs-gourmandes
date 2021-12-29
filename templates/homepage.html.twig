@@ -1,0 +1,119 @@
+{# /templates/homepage.html.twig #}
+{% extends 'base.html.twig' %}
+
+{% block stylesheets %}
+    {{ parent() }}
+    {{ encore_entry_link_tags('homepage') }}
+{% endblock %}
+
+{% block content %}
+    <video autoplay muted loop id="videoHeader">
+        <source src="pictures/header.mp4" type="video/mp4">
+    </video>
+    <h1 id="titleHeader">Crêpes à emporter en sachet dans la région fouesnantaise</h1>
+    <section id="entreprise" class="clearfix">
+        <div class="colBase">
+            <h2><img src="pictures/hermine.png" alt="hermine bretonne" class="left"> L'entreprise <img src="pictures/hermine.png" alt="hermine bretonne" class="right"></h2>
+            <h3><img src="pictures/triskel.svg" alt="triskel" class="left"> L'histoire <img src="pictures/triskel.svg" alt="triskel" class="right"></h3>
+            <div class="row">
+                <div class="col-xl-8">
+                    <p>
+                        Nous fabriquons nos crêpes de forment et de blé noir, ainsi que différente galette et variante de celle-ci. Nous les distribuons à des commerces dans la région du Finistère sud. Tout nos produits sont produit sur place et fait main. La fabrication est artisanale et familiale.<br><br>
+
+                        En 2001, Isabelle et Michel HELLO Créent la crêperie à Pleuven. Rapidement le produit a plu, nous nous sommes donc agrandi en 2010 dans un local à Fouesnant en bordure de l'axe de Quimper-Fouesnant, dans la zone commerçante de Kervihan.<br><br>
+
+                        Rapidement l'entreprise Saveurs gourmandes de Fouesnant s'est faite une place dans la plupart des grande distribution du Finistère Sud.</p>
+                </div>
+                <div class="col-xl-4">
+                    <img src="pictures/entreprise.png" alt="photo de facade">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="number" class="clearfix">
+        <div class="colBase">
+            <h3><img src="pictures/triskelWhite.svg" alt="triskel" class="left"> Quelques chiffres <img src="pictures/triskelWhite.svg" alt="triskel" class="right"></h3>
+            <div class="row">
+                <div class="col-xl-6">
+                    <div><span>14</span> Salariés à l'année</div>
+                </div>
+                <div class="col-xl-6">
+                    <div><span>26</span> Salarié en saison estivale</div>
+                </div>
+                <div class="col-xl-6">
+                    <div><span>500 à 1400</span> Douzaine par jour</div>
+                </div>
+                <div class="col-xl-6">
+                    <div><span>40</span> km, c'est l'etendu du commerce</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="ecommerce" class="clearfix">
+        <div class="colBase">
+            <h2><img src="pictures/hermine.png" alt="hermine bretonne" class="left"> Nos produits <img src="pictures/hermine.png" alt="hermine bretonne" class="right"></h2>
+            <h3><img src="pictures/triskel.svg" alt="triskel" class="left"> Les crêpes <img src="pictures/triskel.svg" alt="triskel" class="right"></h3>
+            <div class="row">
+                <div class="col-xl-4">
+                    <div class="clearfix">
+                        <img src="pictures/entreprise.png"><br>
+                        <h4>6 Crêpes forment sans cannelle</h4>
+                        <span>2.75€</span>
+                        <a href="#"><i class="fas fa-search"></i></a>
+                        <a href="#">Ajouter au panier</a>
+                    </div>
+                </div>
+                <div class="col-xl-4">
+                    <div class="clearfix">
+                        <img src="pictures/entreprise.png"><br>
+                        <h4>6 Crêpes forment sans cannelle</h4>
+                        <span>2.75€</span>
+                        <a href="#"><i class="fas fa-search"></i></a>
+                        <a href="#">Ajouter au panier</a>
+                    </div>
+                </div>
+                <div class="col-xl-4">
+                    <div class="clearfix">
+                        <img src="pictures/entreprise.png"><br>
+                        <h4>6 Crêpes forment sans cannelle</h4>
+                        <span>2.75€</span>
+                        <a href="#"><i class="fas fa-search"></i></a>
+                        <a href="#">Ajouter au panier</a>
+                    </div>
+                </div>
+                <div class="col-xl-4">
+                    <div class="clearfix">
+                        <img src="pictures/entreprise.png"><br>
+                        <h4>6 Crêpes forment sans cannelle</h4>
+                        <span>2.75€</span>
+                        <a href="#"><i class="fas fa-search"></i></a>
+                        <a href="#">Ajouter au panier</a>
+                    </div>
+                </div>
+                <div class="col-xl-4">
+                    <div class="clearfix">
+                        <img src="pictures/entreprise.png"><br>
+                        <h4>6 Crêpes forment sans cannelle</h4>
+                        <span>2.75€</span>
+                        <a href="#"><i class="fas fa-search"></i></a>
+                        <a href="#">Ajouter au panier</a>
+                    </div>
+                </div>
+                <div class="col-xl-4">
+                    <div class="clearfix">
+                        <img src="pictures/entreprise.png"><br>
+                        <h4>6 Crêpes forment sans cannelle</h4>
+                        <span>2.75€</span>
+                        <a href="#"><i class="fas fa-search"></i></a>
+                        <a href="#">Ajouter au panier</a>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xl-12">
+                    <a href="#" id="more">Voir plus de produits</a>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock %}

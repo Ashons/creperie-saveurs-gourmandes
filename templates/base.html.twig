@@ -1,19 +1,75 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <!-- Metas -->
         <meta charset="UTF-8">
-        <title>{% block title %}Welcome!{% endblock %}</title>
-        <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 128 128%22><text y=%221.2em%22 font-size=%2296%22>⚫️</text></svg>">
-        {# Run `composer require symfony/webpack-encore-bundle` to start using Symfony UX #}
+
+        <!-- Title -->
+        <title>{% block title %}Crêperie saveurs gourmandes{% endblock %}</title>
+
+        <!-- Styles -->
         {% block stylesheets %}
-            {{ encore_entry_link_tags('app') }}
+            {{ encore_entry_link_tags('fonts') }}
+            {{ encore_entry_link_tags('base') }}
         {% endblock %}
 
+        <!-- Scripts -->
         {% block javascripts %}
-            {{ encore_entry_script_tags('app') }}
+            {{ encore_entry_script_tags('base') }}
         {% endblock %}
     </head>
     <body>
-        {% block body %}{% endblock %}
+        <!-- Block HEADER -->
+        {% block header %}{% endblock %}
+
+        <!-- Block CONTENT -->
+        {% block content %}{% endblock %}
+
+        <!-- Block FOOTER -->
+        {% block footer %}
+            <footer>
+                <div class="colBase">
+                    <div class="row">
+                        <div class="col-xl-4">
+                            <div id="map"></div>
+                        </div>
+                        <div class="col-xl-8">
+                            <h1>Crêperie saveurs gourmandes</h1>
+                            <h5>4 espace Kervihan, 29170 Fouesnant</h5>
+                            <div class="col-xl-6">
+                                <i class="fas fa-search"></i>
+                                <h6>02 98 54 74 55</h6>
+                            </div>
+                            <div class="col-xl-6">
+                                <i class="fas fa-search"></i>
+                                <h6>Formulaire de contact</h6>
+                            </div>
+                            <hr>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xl-7">
+                            <p>2018 © CREPERIE SAVEURS GOURMANDES | Tout droits réservés </p>
+                        </div>
+                        <div class="col-xl-5">
+                            <nav>
+                                <ul>
+                                    <li><a href="#">Accueil</a></li>
+                                    <li><a href="#">Mon compte</a></li>
+                                    <li><a href="#">Mentions légales</a></li>
+                                    <li><a href="#">CGV</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            </body>
+            <script type="text/javascript" src="js/main.js"></script>
+            <script async defer 
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCi1gYWAldnMQnXcP3C9BMCr5PJxhBGZNI&callback=initMap">
+            </script>
+            </html>
+        {% endblock %}}
     </body>
 </html>
